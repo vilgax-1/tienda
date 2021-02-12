@@ -1,0 +1,41 @@
+.panelCard{
+    display: grid;
+    grid-column: center-start / center-end;
+    margin: 2rem 0 5rem 0;
+    grid-template-columns: repeat(2, minmax(5rem, 1fr));
+    grid-gap: 5rem;
+    
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+        margin: 5rem 0 10rem 0;
+    }
+}   
+
+.cardVentas{
+    box-shadow: 1px 1px 10px 4px rgba($color: #000000, $alpha: .3);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(2rem, 1fr));
+
+    &__img{
+        width: 100%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        z-index: 1;
+    }
+
+    &__content{
+        font-size: 1.8rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-rows: repeat(5, minmax(5rem, 1fr));
+        align-items: center;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+            padding: 1.5rem;
+            grid-template-rows: repeat(5, minmax(4rem, 1fr));
+        }
+    }
+}

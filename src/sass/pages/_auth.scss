@@ -1,0 +1,45 @@
+.auth{
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../../assets/img/clothes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    &__card{
+        background-color: $color-white;
+        padding: 3rem 3vw;
+        border-radius: .5rem;
+        width: 40rem;
+       
+        @media only screen and (max-width: $bp-medium){
+            padding: 3rem 7.5vw;
+        }
+    }
+
+    &__box, &__btn, &__footer{
+        grid-column: 1 / -1;
+    }
+  
+    &__footer{
+        margin-top: -1rem;
+        font-size: 1.5rem;
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 1.8rem;
+        }
+
+        a, a:visited {
+            color: $color-primary;
+        }
+    }
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2.5rem;
+    position: relative;
+}

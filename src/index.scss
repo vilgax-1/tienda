@@ -1,0 +1,25 @@
+// ABSTRACTS
+@import "sass/abstracts/functions";
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+
+// BASE 
+@import "sass/base/base";
+@import "sass/base/typography";
+@import "sass/base/utilities";
+
+// LAYOUT
+@import "sass/layout/grid";
+
+// COMPONENTS
+@import "sass/components/button";
+@import "sass/components/sidebar";
+@import "sass/components/header";
+@import "sass/components/form";
+@import "sass/components/card";
+@import "sass/components/error";
+@import "sass/components/ventasCard";
+
+// PAGES
+@import "sass/pages/auth";
+@import "sass/pages/usuarios";
